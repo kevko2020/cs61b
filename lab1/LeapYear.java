@@ -15,6 +15,10 @@ public class LeapYear {
     }
 
     public static boolean isLeapYear(int year) {
+        /** Check to see if year is a leap year.
+         *  Leap years should be divisible by 4 and not divisible by 100,
+         *  or divisible by 400 
+         */
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
             return true;
         return false;
